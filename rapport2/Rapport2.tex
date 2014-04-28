@@ -1,0 +1,125 @@
+
+\documentclass [11pt]{report}
+
+\usepackage{fancyhdr}
+\usepackage [french]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry}
+\usepackage{titlepic}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{footmisc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+
+\usepackage{eso-pic}
+
+\makeatletter
+\newlength\@tempdim@x
+\newlength\@tempdim@y
+% structure des commandes :
+%   #1 = deplacement selon x
+%   #2 = deplacement selon y
+%   #3 = texte à mettre
+\newcommand\AtUpperLeftCorner[3]{%
+\begingroup
+\@tempdim@x=0cm
+\@tempdim@y=\paperheight
+\advance\@tempdim@x#1
+\advance\@tempdim@y-#2
+\put(\LenToUnit{\@tempdim@x},\LenToUnit{\@tempdim@y}){#3}%
+\endgroup
+}
+\newcommand\AtUpperRightCorner[3]{%
+\begingroup
+\@tempdim@x=\paperwidth
+\@tempdim@y=\paperheight
+\advance\@tempdim@x-#1
+\advance\@tempdim@y-#2
+\put(\LenToUnit{\@tempdim@x},\LenToUnit{\@tempdim@y}){#3}%
+\endgroup
+}
+\newcommand\AtLowerLeftCorner[3]{%
+\begingroup
+\@tempdim@x=0cm
+\@tempdim@y=0cm
+\advance\@tempdim@x#1
+\advance\@tempdim@y#2
+\put(\LenToUnit{\@tempdim@x},\LenToUnit{\@tempdim@y}){#3}%
+\endgroup
+}
+\newcommand\AtLowerRightCorner[3]{%
+\begingroup
+\@tempdim@x=\paperwidth
+\@tempdim@y=0cm
+\advance\@tempdim@x-#1
+\advance\@tempdim@y#2
+\put(\LenToUnit{\@tempdim@x},\LenToUnit{\@tempdim@y}){#3}%
+\endgroup
+}
+% ajout de texte ou d'images en haut à gauche, en haut à droite, etc.
+\AddToShipoutPicture{%
+\AtLowerRightCorner{3cm}{1cm}{\includegraphics[scale=0.20]{images/LogoGroupe.png}}% image en bas à droite
+}
+\makeatother
+
+\pagestyle{fancy}
+
+
+
+
+
+\title{
+	\includegraphics[scale=0.43]{images/Logojeu.png}
+	 \\\vspace{20mm}
+	\textbf{\Huge \itshape Rapport de premi\`ere soutenance  }
+	}
+
+
+
+
+\author{ \\\vspace{2mm}
+	Thibault Gdalia\\\vspace{2mm}
+	Florent Youinou\\\vspace{2mm}
+	Mathilde Laplaze\\\vspace{2mm}
+	Vincent Baille \\\vspace{30mm}
+	}
+
+
+\date{17 janvier 2014}
+
+
+\usepackage{listings,mdframed,xcolor}
+\definecolor{codeBackground}{rgb}{0.95, 0.95, 0.95} %Couleur du rectangle%
+
+
+\lstnewenvironment{mylisting}{
+  \lstset{
+  }
+  \mdframed[backgroundcolor=codeBackground,shadow=false,shadowsize=2pt,shadowcolor=black!30]
+}
+{
+  \endmdframed\ignorespaces
+}
+
+
+\begin{document}
+\thispagestyle{fancy}
+\renewcommand{\baselinestretch}{0.001}
+\maketitle
+
+\chapter*{Introduction} 
+
+Lors de ce deuxi\`eme rapport nous allons voir les diff\'erentes \'evolutions que nous avons apport\'e au jeu. Nous commencerons tout d'abord par rappeler ce que nous avions lors de la premi\`ere soutenance, l'\'etat du moteur physique, les diff\'erents mode de jeu et l'\'editeur de maps. Nous verrons par la suite les diff\'erentes \'el\'ements que nous avons modif\'es, puis nous finirons sur les nouveaut\'es, c'est-\`a-dire ce qui n'exister pas avant.
+
+
+
+
+
+\end {document}
