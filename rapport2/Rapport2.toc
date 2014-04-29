@@ -5,6 +5,9 @@
 \contentsline {subsection}{\numberline {1.1.2}Infini}{3}
 \contentsline {section}{\numberline {1.2}Moteur physique}{4}
 \contentsline {section}{\numberline {1.3}site internet}{4}
+\contentsline {section}{\numberline {1.4}graphisme}{4}
+\contentsline {section}{\numberline {1.5}son}{4}
+\contentsline {section}{\numberline {1.6}\'Editeur de maps}{4}
 \contentsline {chapter}{\numberline {2}Les modifications}{5}
 \contentsline {chapter}{\numberline {3}Les nouveaut\'ees}{6}
 \contentsline {chapter}{\numberline {4}La suite}{7}
