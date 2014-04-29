@@ -9,5 +9,8 @@
 \contentsline {section}{\numberline {1.5}son}{4}
 \contentsline {section}{\numberline {1.6}\'Editeur de maps}{4}
 \contentsline {chapter}{\numberline {2}Les modifications}{5}
+\contentsline {section}{\numberline {2.1}Mode de Jeu}{5}
+\contentsline {subsection}{\numberline {2.1.1}Story}{5}
+\contentsline {subsection}{\numberline {2.1.2}Infiny}{5}
 \contentsline {chapter}{\numberline {3}Les nouveaut\'ees}{6}
 \contentsline {chapter}{\numberline {4}La suite}{7}
