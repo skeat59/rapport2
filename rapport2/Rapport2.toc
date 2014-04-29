@@ -16,6 +16,6 @@
 \contentsline {section}{\numberline {2.3}Editeur de Maps}{5}
 \contentsline {chapter}{\numberline {3}Les nouveaut\'ees}{7}
 \contentsline {section}{\numberline {3.1}Le R\'eseau}{7}
-\contentsline {section}{\numberline {3.2}Comparatif avec le cahier des charges}{7}
-\contentsline {chapter}{\numberline {4}La suite}{8}
-\contentsline {section}{\numberline {4.1}Graphisme}{8}
+\contentsline {chapter}{\numberline {4}Avancement du Projet}{8}
+\contentsline {chapter}{\numberline {5}La suite}{9}
+\contentsline {section}{\numberline {5.1}Graphisme}{9}
