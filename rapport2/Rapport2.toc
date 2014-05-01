@@ -6,16 +6,16 @@
 \contentsline {section}{\numberline {1.2}Moteur physique}{4}
 \contentsline {section}{\numberline {1.3}site internet}{4}
 \contentsline {section}{\numberline {1.4}graphismes}{4}
-\contentsline {section}{\numberline {1.5}son}{4}
-\contentsline {section}{\numberline {1.6}\'Editeur de maps}{4}
-\contentsline {chapter}{\numberline {2}Les modifications}{5}
-\contentsline {section}{\numberline {2.1}Mode de Jeu}{5}
-\contentsline {subsection}{\numberline {2.1.1}Story}{5}
-\contentsline {subsection}{\numberline {2.1.2}Infiny}{5}
-\contentsline {section}{\numberline {2.2}Moteur Physique}{6}
-\contentsline {section}{\numberline {2.3}Editeur de Maps}{6}
-\contentsline {chapter}{\numberline {3}Les nouveaut\'ees}{7}
-\contentsline {section}{\numberline {3.1}Le R\'eseau}{7}
-\contentsline {chapter}{\numberline {4}Avancement du Projet}{8}
-\contentsline {chapter}{\numberline {5}La suite}{9}
-\contentsline {section}{\numberline {5.1}Graphisme}{9}
+\contentsline {section}{\numberline {1.5}son}{5}
+\contentsline {section}{\numberline {1.6}\'Editeur de maps}{5}
+\contentsline {chapter}{\numberline {2}Les modifications}{6}
+\contentsline {section}{\numberline {2.1}Mode de Jeu}{6}
+\contentsline {subsection}{\numberline {2.1.1}Story}{6}
+\contentsline {subsection}{\numberline {2.1.2}Infiny}{6}
+\contentsline {section}{\numberline {2.2}Moteur Physique}{7}
+\contentsline {section}{\numberline {2.3}Editeur de Maps}{7}
+\contentsline {chapter}{\numberline {3}Les nouveaut\'ees}{8}
+\contentsline {section}{\numberline {3.1}Le R\'eseau}{8}
+\contentsline {chapter}{\numberline {4}Avancement du Projet}{9}
+\contentsline {chapter}{\numberline {5}La suite}{10}
+\contentsline {section}{\numberline {5.1}Graphisme}{10}
