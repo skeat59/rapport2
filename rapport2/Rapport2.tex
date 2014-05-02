@@ -78,7 +78,7 @@
 \title{
 	\includegraphics[scale=0.43]{images/Logojeu.png}
 	 \\\vspace{20mm}
-	\textbf{\Huge \itshape Rapport de deuxi\`eme soutenance  }
+	\textbf{\Huge \itshape Rapport de seconde soutenance  }
 	}
 
 
@@ -114,61 +114,118 @@
 \renewcommand{\baselinestretch}{0.001}
 \maketitle
 \tableofcontents
-\chapter*{Introduction} 
-Dans le cadre de notre premi\`ere ann\'ee d'\'etude \`a EPITA, nous avons un projet informatique \`a r\'ealiser tout au long du deuxi\`eme semestre. Nous sommes au milieu de la p\'eriode pr\'evu pour la r\'ealisation de ce jeu. \\
 
-Notre groupe de projet est toujours au complet, personne n'a quitt\'e l'\'ecole depuis la derni\`ere soutenance. Petit Rappel, notre \'equipe est compos\'ee de 4 membres: Mathilde "Mattou" Laplaze, Florent "T4ze" Youinou, Vincent "Vincae" Baille et Thibault "Skeat" Gdalia. Lors de ce deuxi\`eme rapport, nous allons voir les diff\'erentes \'evolutions que nous avons apport\'ees au jeu. Nous commencerons tout d'abord par rappeler ce que nous avions lors de la premi\`ere soutenance, l'\'etat du moteur physique, les diff\'erents mode de jeu et l'\'editeur de maps. Nous verrons par la suite les diff\'erents \'el\'ements que nous avons modif\'es, puis nous finirons sur les nouveaut\'es, c'est-\`a-dire ce qui n'exister pas avant.
+\chapter*{Introduction} 
+Dans le cadre de notre premi\`ere année d'étude \`a EPITA, nous avons un projet informatique \`a réaliser tout au long du deuxi\`eme semestre. Nous sommes au milieu de la période prévu pour la réalisation de ce jeu. \\
+
+Notre groupe de projet est toujours au complet, personne n'a quitté l'école depuis la derni\`ere soutenance. Petit Rappel, notre équipe est composée de 4 membres: Mathilde "Mattou" Laplaze, Florent "T4ze" Youinou, Vincent "Vincae" Baille et Thibault "Skeat" Gdalia. Lors de ce deuxi\`eme rapport, nous allons voir les différentes évolutions que nous avons apportées au jeu. Nous commencerons tout d'abord par rappeler ce que nous avions lors de la premi\`ere soutenance, l'état du moteur physique, les différents mode de jeu et l'éditeur de maps. Nous verrons par la suite les différents éléments que nous avons modifiés, puis nous finirons sur les nouveautés, c'est-\`a-dire ce qui n'exister pas avant.
+
+
+
 
 \chapter{Ce que nous avions}
-	\section{Les diff\'erents mode de jeu}
-		Lors de la soutenance pr\'ec\'edente, deux modes de jeu \'etaient disponibles: le mode story et le mode infini.
+	\section{Les différents mode de jeu}
+		Lors de la soutenance précédente, deux modes de jeu étaient disponibles: le mode story et le mode infini.
 		\subsection{Story}
-			Dans le mode story, vous deviez parcourir une map jusqu'\'a la ligne d'arriv\'ee pour gagner. Mais si par malheur vous sortiez de l\'ecran par la gauche \`a-force de vous cogner contre des blocs, vous aviez perdu et deviez recommencer depuis le d\'ebut. Ce type de partie n'\'etait pas tr\'es int\'eressant car lorsque vous finissiez la map, vous aviez fini ce mode de jeu. Ce type de partie \'etait assez rapide \`a terminer, aussi savions nous que pour rendre notre jeu plus attrayant, il fallait modifier ce mode. \\
+			Dans le mode story, une unique map était disponible. Ainsi vous deviez parcourir cette map jusqu'à la ligne d'arrivée pour gagner. De plus, si par malheur vous sortiez de l'écran par la gauche \`a-force de vous cogner contre des blocs ou pour une autre raison, vous aviez perdu et vous eties bon pour recommencer. Ce type de partie n'était pas trés intéressant car lorsque vous finissiez la map, vous aviez fini ce mode de jeu. \\
+			
+			
+			
+			
+			
 			\subsection{Infini}
-			Ce mode de jeu est l\'eg\`rement diff\'erent, si la façon de jouer reste la m\^eme, le but du jeu n'est pas tout \'a fait pareil. Dans ce mode ci il faut tout d'abord avoir un compte que l'on a pr\'ealablement cr\'e'e sur notre site internet, il est tout fois possible de jouer sans compte mais cela perd un peu de son charme. Le but est d'aller le plus loin possible sur une map, les m\^etres que vous parcourez son comptabilis\'es. Lorsque vous avez touch\'e trop d'obstacles vous \^etes \'eject\'e de la map par la gauche, vous \^etes donc mort, le score est alors sauvegard\'e si vous n'avez jamais fait mieux, puis il est envoy\'e sur notre site web, o\'u vous trouvez un classement de tous les joueurs. vous pouvez ainsi d\'efier vos amis. \\
-			\indent Sur ce mode de jeu, la map \'etait g\'en\'er\'ee al\'eatoirement, nous avions mis des probabilit\'es sur la possibilit\'e d'apparition pour que le jeu reste jouable. mais il n'y avait pas de r\'eelle coh\'erence dans l'apparition des blocs. Vous verrez que ce mode de jeu a reçu quelques modifications afin de le rendre encore plus agr\'eable \`a jouer\\
-			\indent Nous avons apport\'e quelque modifications aux deux modes de jeu existant et nous en avons un nouveau, vous trouverez plus de d\'etails dans la suite du rapport dans les modifications, et dans les nouveaut\'es
+			Ce mode de jeu est lég\`rement différent, bien que la façon de jouer reste la m\^eme, le but du jeu differe legerement. Dans ce mode-ci, il n'y a pas de monde \`a valider puisqu'il n'y a tout simplement pas de fin. Le but est donc evidemment d'aller le plus loin possible. Une des particularitée de ce mode est que si l'on a deja cree un compte sur le site web officiel du jeux : www.CandyBird.eu, il nous est possible de nous connecter depuis le menu principal. Suite a cette connexion, notre score sera automatiquement envoye en ligne sur notre page de Classement (si vous avez fais un meilleur score que le precedent evidemment).\\
+			
+			Lors de notre premiere version du jeux, les blocs present sur la map etait généré de facon aleatoire tout en suivant un pourcentage fixe. Le probleme est que, avec cette implementation, le mode infini devenait vraiment complique puisque certains passages etait tout bonnement impossible a franchir. 
+			
+			
 	\section{Moteur physique}
-		\indent Le Moteur physique \'etait assez rudimentaire lors de la premi\`ere soutenance, lorsque l'on appuyait sur la barre espace l'oiseaumontait \`a vitesse constante. Sinon, le personnage redescendait tranquillement en planant \`a l'aide de ses petites ailes, toujours \`a la meme vitesse. Cela formait des trianglesEn cr\'ant les lois physique de notre jeu nous n'avions pas anticip'e le fait que nous voudrions le changer. C'est principalement pour cette raison que nous avions d\'ecid\'e de refaire int\'egralement le moteur physique, nous entrerons dans les d\'etails de ces modifications plus tard dans ce rapport, dans la partie des modifications\\
-		\indent Il y avait \'egalement quelques probl\`emes dans certains cas de collision, que n'avions pas pris en compte. Par exemple lorsque l'oiseau touchait un bloc de face et qu'il avait un bloc au-dessus de lui, il \'etait possible de traverser les blocs, ce probl\`eme permettait au joueur de tricher et d'\'eviter de mourir.\\
+		\indent Le Moteur physique était assez rudimentaire lors de la premi\`ere soutenance, lorsque l'on appuyait sur la barre espace l'oiseaumontait \`a vitesse constante. Sinon, le personnage redescendait tranquillement en planant \`a l'aide de ses petites ailes, toujours \`a la meme vitesse. Cela formait des trianglesEn cr\'ant les lois physique de notre jeu nous n'avions pas anticip'e le fait que nous voudrions le changer. C'est principalement pour cette raison que nous avions décidé de refaire intégralement le moteur physique, nous entrerons dans les détails de ces modifications plus tard dans ce rapport, dans la partie des modifications\\
+		\indent Il y avait également quelques probl\`emes dans certains cas de collision, que n'avions pas pris en compte. Par exemple lorsque l'oiseau touchait un bloc de face et qu'il avait un bloc au-dessus de lui, il était possible de traverser les blocs, ce probl\`eme permettait au joueur de tricher et d'éviter de mourir.\\
 	\section{Site internet}
-		Notre site internet \'etait d\'ej\`a en ligne lors de la premi\`ere soutenance, et il \'etait assez bien complet. vous pouvez trouver la description de notre projet, une pr\'esentation par membre de l'\'equipe, quelques photos du jeu, dans les t\'el\'echarchement vous pouvez r\'ecup\'erer le cahier des charges et le rapport de la soutenance 1, il y a aussi le classement des joueurs. Sur notre site vous pouvez aussi vous cr\'eer un compte.
+		Notre site internet était déj\`a en ligne lors de la premi\`ere soutenance, et il était assez bien complet. vous pouvez trouver la description de notre projet, une présentation par membre de l'équipe, quelques photos du jeu, dans les télécharchement vous pouvez récupérer le cahier des charges et le rapport de la soutenance 1, il y a aussi le classement des joueurs. Sur notre site vous pouvez aussi vous créer un compte.
 	\section{Graphismes}
-		Lors de la soutenance pr\'ec\'edente nous avions d\'ej\`a un grand nombre de graphisnes disponibles, tels que les fonds des menus, les sprites de l'oiseau, les diff\'erents boutons du jeux ainsi que les boutons de l'\'editeur de maps. Nous avons cr\'e\'e un univers color\'e autour de notre projet, ceci n'a pas chang\'e depuis nous gardons toujours cette positions 
+		Lors de la soutenance précédente nous avions déj\`a un grand nombre de graphisnes disponibles, tels que les fonds des menus, les sprites de l'oiseau, les différents boutons du jeux ainsi que les boutons de l'éditeur de maps. Nous avons créé un univers coloré autour de notre projet, ceci n'a pas changé depuis nous gardons toujours cette positions 
 	\section{Son}
 	\section{\'Editeur de maps}
-		L'\'editeur \'etait un \'el\'ement un peu a part dans notre projet. Nous nous en \'etions pas \'normement servi pour la soutenance pr\'ec\'edente, car nous l'avions terminer un peu tardivement, et que le projet n'\'etait pas suffisement avanc\'e pour nous en ayons r'eellement besoin.
+		L'éditeur était un élément un peu a part dans notre projet. Nous nous en étions pas \'normement servi pour la soutenance précédente, car nous l'avions terminer un peu tardivement, et que le projet n'était pas suffisement avancé pour nous en ayons r'eellement besoin.
+		
+		
+		
+		
+		
 \chapter{Les modifications}
 	\section{Mode de Jeu}
-		Pour cette deuxi\`eme soutenance nous avons modifi\'e les deux modes de jeux existant, il \'etait n\'ecessaire d'am\'eliorer les modes de jeux existants, aussi bien pour ralonger la dur\'ee de vie du jeux, et qu'il soit aussi plus agr\'eable \`a jouer.
+		Pour cette seconde soutenance, les deux modes de jeux existants ont ete modifié.
+		Il était nécessaire d'améliorer ces modes, aussi bien pour ralonger la durée de vie du jeux, que pour l'embellir et le rendre plus agréable \`a jouer.
+		
 		\subsection{Story}
-			\indent Pour commencer, nous avans rajout\'e des niveau. Nous avons donc mis en place menu vous permettant de choisir le niveau, et donc la map sur laquelle vous voulez jouer, \`a condition bien s\^ur de l'avoir debloqu\'ee en gagnant au moins une fois le niveau pr\'ec\'edent.Il y a aujourd'hui neuf maps disponibles o\`u la difficult\'e augmente au fur et \`a mesure que l'on avance dans les niveaux. \`A l'aide de l'\'editeur de map, il n'a pas \'et\'e compliqu\'e de cr\'eer chaque map et cela a \'et\'e un gros avantage. Cependant, cette t\^ache a pris du temps car nous voulions des maps assez longues, et ce n'est pas la partie la plus int\'eressante du projet. Par la suite, chaque membre du groupe a test\'e les diff\'erentes maps pour v\'erifier quelles soient toutes jouables sans qu'elles soient trop simple : il serait dommage d'avoit du contenu qui ne soit pas exploitable par le joueur.
-			\indent Afin d'\'etoffer notre projet, nous avons fait quelques niveaux avec des propriétés particuli\`eres. Par exemple, 
+			\indent
+			Nous avons donc modifie notre mode histoire afin qu'il ressemble plus a ce qu'on a l'habitude de trouver dans la plupart des jeux. 
+									
+			Pour commencer, nous avons rajouté des niveau pour élargir le jeux. Il y a aujourd'hui neuf maps disponibles où la difficulté augmente au fur et à mesure que l'on avance dans les niveaux. À l'aide de l'éditeur de map, il n'a pas été compliqué de créer chaque map et cela a été un gros avantage. Cependant, cette tâche a pris du temps car nous voulions des maps assez longues, et ce n'est pas la partie la plus intéressante du projet.
+									
+									
+			De plus, nous avons mis en place un menu vous permettant de choisir le niveau au quel vous souhaitez jouer. Désormais vous ne pouvez pas valider le monde 4 sans avoir au préalable valider le monde 3. Lorsque vous commencez à jouer votre premiere partie de CandyBird, il n'y a donc que le premier monde de disponible.\\
+									
+									
+			Par la suite, chaque membre du groupe a testé les différentes maps pour vérifier quelles soient toutes jouables sans être trop simple : il serait dommage d'avoir du contenu qui ne soit pas exploitable par le joueur.
+						  
+			\indent Afin d'étoffer notre projet, nous avons fait quelques niveaux avec des propriétés particulières. Par exemple.\\
+			
+			
+			\indent --------[ A REMPILIR ]-------
+			
+			
+			
+			
 		\subsection{Infini}
-			Le mode Infiny \'etait la partie du jeu la plus importante pour nous, car ce mode de jeu est g\'en\'eralement plus appr\'ecier par les utilisateur. Lors de la derni\`ere soutenance nous avions d\'ej\`a bien avanc\'e. Nous avons tout de m\^eme modifi\'e les apparitions al\'eatoire des blocs car ce mode manquait d'harmonie, \`a l'aide de pattern que nous avons d\'efini \`a l'avance. Nous les avons cr\'e\'e ces patterns de telle façon qu'il peuvent se suivre sans probl\`eme. Lorsque l'on joue au mode Infiny, les patterns se succ\`ede al\'eatoirement. Par la suite nous pourront rajouter des patterns afin d'augmenter la diversit\'e de d\'ecors.
+			\indent 
+			Le mode Infini est une des plus grosses parties du jeu car c'est en générale ce que les utilisateurs préfèrent. Etant nous même des utilisateurs potentiels de CandyBird, nous savons que le système de comparaison de score sur le site est très apprécié.
+						
+			Lors de la dernière soutenance nous avions déjà bien avancé. Nous avons tout de même modifié les apparitions aléatoire des blocs car ce mode manquait d'harmonie.\\
+						
+						
+			Cette nouvelle version est beaucoup plus "logique" en terme de jouabilité. Puisque le problème était l’enchaînement des blocs, pourquoi ne pas rendre cette génération standard afin de régler cette génération quasi impossible a franchir. Nous avons donc choisit de préparer de nombreux patterns, tous de même longueur, commençant et se terminant toujours par les mêmes blocs. Ainsi c'est l’enchaînement des pattern qui se fait de façon aléatoire et le map infini crée reste tout a fait jouable. En faite ce principe suit le même principe que si les différents mondes s’enchaînaient infiniment et de façon aléatoire les uns après les autres, sauf que ce ne sont pas les mêmes mondes.
+						
+			Par la suite il nous suffira de rajouter des patterns et des bonus afin d'augmenter la diversité des décors et la jouabilité.
+			
+			
 \newpage
 	\section{Moteur Physique}
-		Depuis la derni\`ere soutenance nous avons compl\`etement revue le moteur physique. Nous nous sommes fait la remarque qu'un jeu bas\'e sur un oiseau qui vole n\'ecessite un bon moteur physique. C'est donc Mattou qui s'est attel\'ee \`a cette t\^ache. Elle a commenc\'e en modifiant le code initial, mais les probl\`emes s'accumulaient et elle n'arrivait pas \`a tous les arranger. Elle a donc fini par prendre la d\'ecision de repartir de z\'ero. Cela lui a fait perdre du temps, mais pas en vain car le jeu poss\'ede maintenant un moteur physique qui lui donne un effet plus r\'ealiste. En effet, au lieu de simplement monter et descendre avec une vitesse constante, il saute maintenant en suivant une certaine acc\'el\'eration qui simule les propri\'et\'es physiques d'un corps en chute libre. Cela donne donc au joueur une impression de gravit\'e. Mattou a \'egalement fait attention \'a ce que le nouveau moteur physique soit facilement adaptable \'a des propri\'et\'es physiques plus particuli\`res, pour pouvoir faire varier la difficult\'e d'un niveau \`a un autre. Le moteur physique du jeu a donc \'et\'e nettement am\'elor\'e. \\
-		\indent Il y avait \'egalement quelques probl\`emes dans certains cas de collision, que n'avions pas pris en compte. Par exemple lorsque l'oiseau touchait un bloc de face et qu'il avait un bloc au-dessus de lui, il \'etait possible de traverser les blocs, ce probl\`eme permettait au joueur de tricher et d'\'eviter de mourir. Il y avait donc peu d'int\'er\^et \`a y jouer. Lorsque Mattou a refait le moteur physique, elle en a donc profit\'e pour se pencher sur ce probl\'eme. \`A-pr\'esent, les collisions fonctionnent donc toutes. 
+		Depuis la derni\`ere soutenance nous avons compl\`etement revue le moteur physique. Nous nous sommes fait la remarque qu'un jeu basé sur un oiseau qui vole nécessite un bon moteur physique. C'est donc Mattou qui s'est attelée \`a cette t\^ache. Elle a commencé en modifiant le code initial, mais les probl\`emes s'accumulaient et elle n'arrivait pas \`a tous les arranger. Elle a donc fini par prendre la décision de repartir de zéro. Cela lui a fait perdre du temps, mais pas en vain car le jeu posséde maintenant un moteur physique qui lui donne un effet plus réaliste. En effet, au lieu de simplement monter et descendre avec une vitesse constante, il saute maintenant en suivant une certaine accélération qui simule les propriétés physiques d'un corps en chute libre. Cela donne donc au joueur une impression de gravité. Mattou a également fait attention \'a ce que le nouveau moteur physique soit facilement adaptable \'a des propriétés physiques plus particuli\`res, pour pouvoir faire varier la difficulté d'un niveau \`a un autre. Le moteur physique du jeu a donc été nettement améloré. \\
+		
+		\indent Il y avait également quelques probl\`emes dans certains cas de collision, que n'avions pas pris en compte. Par exemple lorsque l'oiseau touchait un bloc de face et qu'il avait un bloc au-dessus de lui, il était possible de traverser les blocs, ce probl\`eme permettait au joueur de tricher et d'éviter de mourir. Il y avait donc peu d'intér\^et \`a y jouer. Lorsque Mattou a refait le moteur physique, elle en a donc profité pour se pencher sur ce probléme. \`A-présent, les collisions fonctionnent donc toutes. 
+		
 	\section{Editeur de Maps}
-		Nous avons apport\'e quelques modifications a notre \'editeur de maps car nous n'avions pas encore vu ses limites, tout d'abord il fallu tout d'abord revoir l'initialisation de la map, car nous \'etions bloqu\'e avec une longueur de 100 cubes dans la longueur, ce qui rendait les parties tr\'es courtes, aujourd'hui il est possible de cr\'eer des maps d'une longueur de 1 000 cubes par lignes, ce qui est largement suffisant pour le moment car les maps que nous cr\'eons pour le mode story sont d'une longueur de 500 cubes par lignes, nous estimons que cela est largement suffisant pour que le joueur puisse s'amuser.\\
-		\indent Nous avons aussi du revoir le chargement des maps existantes. Lors de la soutenance pr\'ec\'edente nous n'avions pas pens\'e a ce genre d'utilisation. Il s'av\'ere que cela est tr\'es pratique lors des tests des nouvelles maps car au debut nous ne pouvions rien faire si la map se trouvait \^etre infaisable. En r\'ealit\'e nous pouvions modifier, en ouvrqnt la maps sur un \'editeur de texte tel que notepad et changer la valeur de la case \`a la main, mais cette solution n'\'etait pas envisageable \`a grande \'echelle.
-\chapter{Les nouveaut\'es}
-	\section{Le R\'eseau}
+		Nous avons apporté quelques modifications a notre éditeur de maps car nous n'avions pas encore vu ses limites, tout d'abord il fallu tout d'abord revoir l'initialisation de la map, car nous étions bloqué avec une longueur de 100 cubes dans la longueur, ce qui rendait les parties trés courtes, aujourd'hui il est possible de créer des maps d'une longueur de 1 000 cubes par lignes, ce qui est largement suffisant pour le moment car les maps que nous créons pour le mode story sont d'une longueur de 500 cubes par lignes, nous estimons que cela est largement suffisant pour que le joueur puisse s'amuser.\\
+		
+		\indent Nous avons aussi du revoir le chargement des maps existantes. Lors de la soutenance précédente nous n'avions pas pensé a ce genre d'utilisation. Il s'avére que cela est tr\'es pratique lors des tests des nouvelles maps car au debut nous ne pouvions rien faire si la map se trouvait \^etre infaisable. En réalité nous pouvions modifier, en ouvrqnt la maps sur un éditeur de texte tel que notepad et changer la valeur de la case \`a la main, mais cette solution n'était pas envisageable \`a grande échelle.
+		
+\chapter{Les nouveautés}
+	\section{Le Réseau}
+	
 \chapter{Avancement du Projet}
+	\renewcommand{\arraystretch}{2}
+	\setlength{\tabcolsep}{0.7cm}
 	\begin{tabular}{|c|c|c|}
-	\hline  & premi\`ere soutenance & deuxi\'eme soutenance \\ 
+	\hline  & premi\`ere soutenance & deuxi\`eme soutenance\\ 
 	\hline Moteur Physique & 50\% & 95\% \\ 
 	\hline \'Editeur de maps & 60\% & 90\% \\ 
 	\hline Son & 80\% & 85\% \\ 
+	\hline Mode Histoire & 50\% &  80\%\\ 
+	\hline Mode Infini & 50\% & 90\% \\ 
+	\hline Réseau &  0\% & 90\% \\ 
 	\hline Graphismes & 60\% & 60\% \\ 
 	\hline Site internet & 80\% & 85\% \\ 
-	\hline  &  &  \\ 
-	\hline  &  &  \\ 
-	\hline  &  &  \\ 
-	\hline 
+	\hline
 	\end{tabular} 
+	
+	
+	
+	
 \chapter{La suite}
 	\section{Graphisme}
+	
 \chapter*{Conclusion}
 \end {document}

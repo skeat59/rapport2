@@ -1,6 +1,6 @@
 \select@language {french}
 \contentsline {chapter}{\numberline {1}Ce que nous avions}{3}
-\contentsline {section}{\numberline {1.1}Les diff\'erents mode de jeu}{3}
+\contentsline {section}{\numberline {1.1}Les diff\IeC {\'e}rents mode de jeu}{3}
 \contentsline {subsection}{\numberline {1.1.1}Story}{3}
 \contentsline {subsection}{\numberline {1.1.2}Infini}{3}
 \contentsline {section}{\numberline {1.2}Moteur physique}{4}
@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {2.1}Mode de Jeu}{5}
 \contentsline {subsection}{\numberline {2.1.1}Story}{5}
 \contentsline {subsection}{\numberline {2.1.2}Infini}{5}
-\contentsline {section}{\numberline {2.2}Moteur Physique}{6}
-\contentsline {section}{\numberline {2.3}Editeur de Maps}{6}
-\contentsline {chapter}{\numberline {3}Les nouveaut\'es}{7}
-\contentsline {section}{\numberline {3.1}Le R\'eseau}{7}
-\contentsline {chapter}{\numberline {4}Avancement du Projet}{8}
-\contentsline {chapter}{\numberline {5}La suite}{9}
-\contentsline {section}{\numberline {5.1}Graphisme}{9}
+\contentsline {section}{\numberline {2.2}Moteur Physique}{7}
+\contentsline {section}{\numberline {2.3}Editeur de Maps}{7}
+\contentsline {chapter}{\numberline {3}Les nouveaut\IeC {\'e}s}{8}
+\contentsline {section}{\numberline {3.1}Le R\IeC {\'e}seau}{8}
+\contentsline {chapter}{\numberline {4}Avancement du Projet}{9}
+\contentsline {chapter}{\numberline {5}La suite}{10}
+\contentsline {section}{\numberline {5.1}Graphisme}{10}
