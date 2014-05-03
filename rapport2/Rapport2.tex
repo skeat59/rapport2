@@ -207,9 +207,19 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 			
 \newpage
 	\section{Moteur Physique}
-		Depuis la dernière soutenance nous avons complètement revue le moteur physique. Nous nous sommes fait la remarque qu'un jeu bas\'e sur un oiseau qui vole nécessite un bon moteur physique. C'est donc Mattou qui s'est attelée \`a cette t\^ache. Elle a commencé en modifiant le code initial, mais les problèmes s'accumulaient et elle n'arrivait pas \`a tous les arranger. Elle a donc fini par prendre la décision de repartir de zéro. Cela lui a fait perdre du temps, mais pas en vain car le jeu possède maintenant un moteur physique qui lui donne un effet plus r\'ealiste. En effet, au lieu de simplement monter et descendre avec une vitesse constante, il saute maintenant en suivant une certaine accélération qui simule les propri\'et\'es physiques d'un corps en chute libre. Cela donne donc au joueur une impression de gravit\'e. Mattou a \'egalement fait attention \'a ce que le nouveau moteur physique soit facilement adaptable \'a des propri\'et\'es physiques plus particuli\`res, pour pouvoir faire varier la difficult\'e d'un niveau \`a un autre. Le moteur physique du jeu a donc \'et\'e nettement am\'elor\'e. \\
+		Depuis la dernière soutenance nous avons complètement revue le moteur physique. Nous nous sommes fait la remarque qu'un jeu bas\'e sur un oiseau qui vole nécessite un bon moteur physique. C'est donc Mattou qui s'est attelée \`a cette t\^ache. \\
 		
-		\indent Une fois que nous avons jugé la trajectoire de l'oiseau satisfaisante, il a fallu se pencher sur les collisions. Comme dit précédemment, elles ne fonctionnaient pas toutes parfaitement. Et nous ne pouvions pas nous contenter de réparer les erreurs à-partir du code existant, car étant donné les modifications au niveau du mode histoire, il nous fallait un code modulable et facile à adapter à chaque niveau. Pour le niveau 8 par exemple, les collisions ne sont pas gérées de la meme manière car si l'oiseau touche un bloc qui est en-dessous de lui, il ne doit pas pouvoir se poser étant donné que le centre de gravité est au-dessus de lui. Pour le niveau 5, les blocs n'empêchent pas forcément l'oiseau d'avancer en fonction de leur nature. Certains disparaissent seulement, et affaiblissent l'oiseau. Tous ces détails demandent un moteur physique adapté pour chaque map. Nous avons donc maintenant des collisions qui fonctionnent toutes sans exception.
+		Elle a commencé en modifiant le code initial, mais les problèmes s'accumulaient et elle n'arrivait pas \`a tous les arranger. Elle a donc fini par prendre la décision de repartir de zéro. Cela lui a fait perdre du temps, mais pas en vain car le jeu possède maintenant un moteur physique qui lui donne un effet plus r\'ealiste. En effet, au lieu de simplement monter et descendre avec une vitesse constante, il saute maintenant en suivant une certaine accélération qui simule les propri\'et\'es physiques d'un corps en chute libre. Cela donne donc au joueur une impression de gravit\'e. Mattou a \'egalement fait attention \'a ce que le nouveau moteur physique soit facilement adaptable \'a des propri\'et\'es physiques plus particuli\`res, pour pouvoir faire varier la difficult\'e d'un niveau \`a un autre. Le moteur physique du jeu a donc \'et\'e nettement am\'elor\'e. \\
+		
+		\indent Une fois que nous avons jugé la trajectoire de l'oiseau satisfaisante, il a fallu se pencher sur les collisions. Comme dit précédemment, elles ne fonctionnaient pas toutes parfaitement. Et nous ne pouvions pas nous contenter de réparer les erreurs à-partir du code existant, car étant donné les modifications au niveau du mode histoire, il nous fallait un code modulable et facile à adapter à chaque niveau.\\
+		
+		\noindent Par exemple :\\
+		\indent\indent - Pour le niveau 8, les collisions ne sont pas gérées de la meme manière car si l'oiseau touche un bloc qui est en-dessous de lui, il ne doit pas pouvoir se poser étant donné que le centre de gravité est au-dessus de lui.
+		
+		\indent\indent - Pour le niveau 5, les blocs n'empêchent pas forcément l'oiseau d'avancer en fonction de leur nature. Certains disparaissent seulement, et affaiblissent l'oiseau.\\
+		
+		
+		Tous ces détails demandent un moteur physique adapté pour chaque map. Nous avons donc maintenant des collisions qui fonctionnent toutes sans exception.
 		
 		\vspace{10mm}
 		
@@ -223,30 +233,45 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 		
 \chapter{Les nouveautés}
 	\section{Le Réseau}
-		Pouvoir jouer seul en débloquant des niveau, jouer dans un mode infini et repousser nos limites et même envoyer notre score en ligne sont des possibilités intéressantes. Mais à part comparer son score, on se sens vite seul, et on peux se lasser du jeux.\\
+		Pouvoir jouer seul en débloquant des niveaux, jouer dans un mode infini et repousser ses limites et même envoyer son score en ligne sont des possibilités intéressantes. Mais à part comparer son score, on se sens vite seul, et on peux se lasser du jeux. En restant dans la même optique, si vous êtes à plusieurs, vous n'avez pas forcement envie de jouer chacun votre tour, cela créer des tensions.\\
 		
-		C'est pourquoi nous avons choisit, pour votre plus grand plaisir, d'apporter une "légère" nouveauté à CandyBird : Un mode réseau.\\
+		C'est pourquoi nous avons choisit, pour votre plus grand plaisir, d'apporter une "légère" nouveauté à CandyBird : Un réseau.\\
 		
-		\vspace{6mm}
+		Grâce à se réseau, finit les prises de têtes pour savoir à qui est-ce le tour de jouer, vous pourrez tous jouer en même temps !
+		Le but de notre réseau n'est pas d'arriver avant les autres au bout de la map comme dans la plupart des courses que l'on connait. D'ailleur vous pouvez toujours essayer d'arriver avant les autres mais le mode infini n'as pas de fin donc cela va être compliqué.. De plus, la map défile à la même vitesse et les blocs s'enchainent de la même façon chez toutes les personnes connectée au même server. Vous devez donc survivre aussi longtemps que les autres, et être le dernier en vie pour faire le meilleur score. Tout comme donc le mode infini normal, votre score est envoyer sur notre site en cas de défaite, afin que votre meilleur score soit sauvegardé.\\
 		
-		\subsection{Comment l'utiliser ?}
-		
-		Disponible depuis le nouveau panel de connexion, dans le second onglet intitulé "server", vous avez désormais le choix entre rejoindre ou créer un server. Dans le premier cas, il vous suffira de rentrer l'adresse ip ainsi que le port sur lequel est exécuté le server. Dans le second, seul le port est nécessaire et vous pourrez ensuite partager les informations à vos amis pour qu'ils s'y connecte à leur tour. Pour l'aspect visuel du mode réseau, vous pouvez également, dans le troisième onglet, sélectionner la couleur de vos adversaires. En effet si tout le monde est de la même couleur sur la map, on ne sait plus qui est qui..		
-		Maintenant que vous êtes connecté au server, le votre ou celui d'un ami, ce que vous souhaiter,  c'est pouvoir jouer ! Et bien il suffit simplement de lancer le mode infini et vous verrez votre/vos amis apparaitre sur la map à vos cotés.\\
-		
-		Le but du réseau n'est pas d'arriver avant les autres au bout de la map. Vous pouvez toujours essayer mais le mode infini n'as pas de fin donc vous essaierez longtemps.. De plus, la map défile à la même vitesse chez toutes les personnes connecté au même server, et les blocs s'enchainent de la même façon. Vous devez donc survivre aussi longtemps que les autres, et être le dernier en vie pour faire le meilleur score. Tout comme donc le mode infini normal, votre score est envoyer sur notre site en cas de défaite, afin que votre meilleur score soit sauvegardé.
+		A l'instar du jeux Trackmania ou le but est de faire le meilleur temps même si les voitures ne commencent pas toutes en même temps, ici il faut allez le plus loin possible. On rappel que votre score est traduit sous forme d'un compteur de mètres dans la partie supérieur de CandyBird.
 		
 		\newpage
 		
-		\subsection{Comment ça marche en coulisse ?}
+		\subsection{Comment l'utiliser ?}
+		\vspace{6mm}
+		\begin{center}\includegraphics[scale=0.43]{images/panel.jpg}\end{center}
+		\vspace{6mm}
+				
+		Disponible depuis le nouveau panel de connexion, dans le second onglet intitulé "server", vous avez désormais le choix entre rejoindre ou créer un server. Dans le premier cas, il vous suffira de rentrer l'adresse ip ainsi que le port sur lequel est exécuté le server. Dans le second, seul le port est nécessaire et vous pourrez ensuite partager les informations à vos amis pour qu'ils s'y connecte à leur tour. Pour l'aspect visuel du mode réseau, vous pouvez également, dans le troisième onglet, sélectionner la couleur de vos adversaires. En effet si tout le monde est de la même couleur sur la map, on ne sait plus qui est qui..\\		
 		
-		Lorsque vous créez le server, c'est une application externe qui se lance. De cette façon, si le server rencontre un problème, que la connexion lâche ou qu'un quelconque problème survient, le jeux ne risque rien. 
+		Maintenant que vous êtes connecté au server, le votre ou celui d'un ami, ce que vous souhaitez,  c'est pouvoir jouer ! Et bien il suffit simplement de lancer le mode infini et vous verrez votre/vos amis apparaitre sur la map à vos cotés.\\
+				
+				
+		\vspace{10mm}
 		
+		
+		\subsection{Comment le réseau s'est construit ?}
+		
+		Aucun membre du groupe n'avait de connaissance en réseau, il a donc fallut se lancer dans des recherches afin de comprendre comment faire. C'est T4ze qui s'est occupé d'implémenter les parties correspondantes à ce réseau. En y reflechissant, une analogie avec un chat lui est venu à l'esprit. En effet, dans un chat il y a un server principal et les messages de chaque personne sont envoyé à tous le monde. Ici, dans CandyBird c'est exactement ce que nous voulons, sauf qu'à la place des messages, ce sont des positions qui sont envoyées.\\
+		
+		Pour ne pas s'embrouiller dans le code, il a décider de créer dans un premier temps un projet externe contenant ce "Chat". Après avoir passé tous nos test et s'être avéré être une solution viable, ce projet secondaire à été intégré au projet principal.\\
+		
+		Lorsque vous créez le server, c'est une application externe qui se lance. De cette façon, si le server rencontre un problème, que la connexion lâche ou qu'un quelconque problème survient, le jeux ne risque rien. \\
+				
 		La première version du server marchait parfaitement mais il y avait un léger problème. On voyait clairement les différents joueurs se déplacer sur la carte mais la génération de map était propre à chaque joueur, et donc personne n'avaient la même map et on voyait des joueurs traverser des blocs. Pour que chacun joue avec les mêmes blocs il a fallut rendre unique cette génération. Logiquement, c'est l'utilisateur qui héberge le server qui a ete choisit pour générer la map pour tous les autres.\\
+				
+		A chaque Update du Game1, les Clients envoie leur pseudo ainsi que leur position (sur x et sur y). De même, ils récupèrent les données envoyées par les autres Clients afin de mettre à jour leur position. Ainsi les joueurs apparaissent sur les écrans de tout le monde en temps réel.
 		
-		A chaque Update du Game1, les Clients envoie leur pseudo ainsi que leur position (sur x et sur y). De même, ils récupèrent les données envoyées par les autres Clients afin de mettre à jour leur position.
 		
 		
+				
 		
 	
 	
