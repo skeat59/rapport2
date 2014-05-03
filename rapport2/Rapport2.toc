@@ -11,7 +11,7 @@
 \contentsline {chapter}{\numberline {2}Les modifications}{6}
 \contentsline {section}{\numberline {2.1}Mode de Jeu}{6}
 \contentsline {subsection}{\numberline {2.1.1}Story}{6}
-\contentsline {subsection}{\numberline {2.1.2}Infini}{6}
+\contentsline {subsection}{\numberline {2.1.2}Infini}{7}
 \contentsline {section}{\numberline {2.2}Moteur Physique}{8}
 \contentsline {section}{\numberline {2.3}Editeur de Maps}{8}
 \contentsline {chapter}{\numberline {3}Les nouveaut\IeC {\'e}s}{10}
