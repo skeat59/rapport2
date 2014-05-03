@@ -22,3 +22,4 @@
 \contentsline {chapter}{\numberline {5}La suite}{16}
 \contentsline {section}{\numberline {5.1}Graphismes}{16}
 \contentsline {section}{\numberline {5.2}Editeur de map}{16}
+\contentsline {section}{\numberline {5.3}Son}{16}
