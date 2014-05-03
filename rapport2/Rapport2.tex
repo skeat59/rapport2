@@ -147,6 +147,9 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 			\vspace{10mm}
 			
 	\section{Moteur physique}
+	
+	\vspace{5mm}
+	
 		\indent Le Moteur physique était assez rudimentaire lors de la premi\`ere soutenance, lorsque l'on appuyait sur la barre espace l'oiseaumontait \`a vitesse constante. Sinon, le personnage redescendait tranquillement en planant \`a l'aide de ses petites ailes, toujours \`a la meme vitesse. Cela formait des trianglesEn cr\'ant les lois physique de notre jeu nous n'avions pas anticip'e le fait que nous voudrions le changer. C'est principalement pour cette raison que nous avions décidé de refaire intégralement le moteur physique, nous entrerons dans les détails de ces modifications plus tard dans ce rapport, dans la partie des modifications.\\
 		
 		\indent Il y avait également quelques probl\`emes dans certains cas de collision, que n'avions pas pris en compte. Par exemple lorsque l'oiseau touchait un bloc de face et qu'il avait un bloc au-dessus de lui, il était possible de traverser les blocs, ce probl\`eme permettait au joueur de tricher et d'éviter de mourir.\\
@@ -155,15 +158,25 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 		
 		
 	\section{Site internet}
+	
+	\vspace{5mm}
+	
 		Notre site internet était déj\`a en ligne lors de la premi\`ere soutenance, et il était assez bien complet. vous pouvez y trouver la description de notre projet, une courte  présentation de chaque membre de l'équipe ainsi que quelques photos du jeu. Sur la page de télécharchement, vous pouvez récupérer notre cahier des charges et le rapport de la soutenance 1. Sur notre site vous avez egalement la possibilite de vous inscrire si vous voulez par la suite vous connecter au jeu. Pour finir, une page de classement des joueurs vous permet de comparer votre score avec les autres. 
-		\vspace{10mm}
 		
-	\section{Graphismes}	
+		\vspace{15mm}
+		
+	\section{Graphismes}
+	
+	\vspace{5mm}
+		
 		Lors de la soutenance précédente nous avions déj\`a un grand nombre de graphisnes disponibles, tels que les fonds des menus, les sprites de l'oiseau, les différents boutons du jeux ainsi que les boutons de l'éditeur de maps. Nous avons créé un univers coloré autour de notre projet, ceci n'a pas changé depuis nous gardons toujours cette positions.
 		
 		\vspace{10mm}
 		
 	\section{Son}
+	
+	\vspace{3mm}
+	
 		Nous avions déjà, lors de la première soutenance, des musiques differentes en fonction de l'état de jeu. Nous en modifierons sûrement quelques unes, mais cela n'est pas essentiel au projet. C'est pourquoi nous nous pencherons sur ce détail lorsque tout le reste sera termin\'e.\\
 		\indent Le plus important actuellement est de rajouter des sons au cours du jeu : peur les collisions, pour les moment où la barre de vie est trop basse ou qu'elle augmente grâce à un bonbon.. Mais encore une fois, nous nous pencherons sur ce travail plus tard car nous pensons \`a rajouter encore différents types de bonbons, ou des bonus.
 		
@@ -171,6 +184,9 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 
 
 	\section{\'Editeur de maps}
+	
+	\vspace{3mm}
+	
 		L'éditeur était un élément un peu a part dans notre projet. Nous nous en étions pas énormément servi pour la soutenance précédente, car nous l'avions terminer un peu tardivement, et que le projet n'était pas suffisamment avancé pour nous en ayons réellement besoin.
 		
 		
@@ -227,11 +243,32 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 			
 \newpage
 	\section{Moteur Physique}
+	
+		\vspace{5mm}
+	
 		Depuis la dernière soutenance nous avons complètement revue le moteur physique. Nous nous sommes fait la remarque qu'un jeu bas\'e sur un oiseau qui vole nécessite un bon moteur physique. C'est donc Mattou qui s'est attelée \`a cette t\^ache. \\
 		
-		Elle a commencé en modifiant le code initial, mais les problèmes s'accumulaient et elle n'arrivait pas \`a tous les arranger. Elle a donc fini par prendre la décision de repartir de zéro. Cela lui a fait perdre du temps, mais pas en vain car le jeu possède maintenant un moteur physique qui lui donne un effet plus r\'ealiste. En effet, au lieu de simplement monter et descendre avec une vitesse constante, il saute maintenant en suivant une certaine accélération qui simule les propri\'et\'es physiques d'un corps en chute libre. Cela donne donc au joueur une impression de gravit\'e. Mattou a \'egalement fait attention \'a ce que le nouveau moteur physique soit facilement adaptable \'a des propri\'et\'es physiques plus particuli\`res, pour pouvoir faire varier la difficult\'e d'un niveau \`a un autre. Le moteur physique du jeu a donc \'et\'e nettement am\'elor\'e. \\
+		\vspace{6mm}
+		
+		Elle a commencé en modifiant le code initial, mais les problèmes s'accumulaient et elle n'arrivait pas \`a tous les arranger. Elle a donc fini par prendre la décision de repartir de zéro. Cela lui a fait perdre du temps, mais pas en vain car le jeu possède maintenant un moteur physique qui lui donne un effet plus r\'ealiste. En effet, au lieu de simplement monter et descendre avec une vitesse constante, il saute maintenant en suivant une certaine accélération qui simule les propri\'et\'es physiques d'un corps en chute libre. Cela donne donc au joueur une impression de gravit\'e. Mattou a \'egalement fait attention \'a ce que le nouveau moteur physique soit facilement adaptable \'a des propri\'et\'es physiques plus particulières, pour pouvoir faire varier la difficult\'e d'un niveau \`a un autre. Le moteur physique du jeu a donc \'et\'e nettement am\'elor\'e. \\
+				
+		\vspace{3mm}
+				
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.4\linewidth]{images/trajectoire.jpg}
+			\caption[Editeur de Maps]{Trajectoire de l'oiseau}
+			\label{fig:Editeur}
+		\end{figure}
+	
+		
+		\vspace{8mm}
+		
+		
 		
 		\indent Une fois que nous avons jugé la trajectoire de l'oiseau satisfaisante, il a fallu se pencher sur les collisions. Comme dit précédemment, elles ne fonctionnaient pas toutes parfaitement. Et nous ne pouvions pas nous contenter de réparer les erreurs à-partir du code existant, car étant donné les modifications au niveau du mode histoire, il nous fallait un code modulable et facile à adapter à chaque niveau.\\
+		
+		\newpage
 		
 		\noindent Par exemple :\\
 		\indent\indent - Pour le niveau 8, les collisions ne sont pas gérées de la meme manière car si l'oiseau touche un bloc qui est en-dessous de lui, il ne doit pas pouvoir se poser étant donné que le centre de gravité est au-dessus de lui.
@@ -245,8 +282,6 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 		
 	\section{Editeur de Maps}
 		Nous avons apporté quelques modifications a notre éditeur de maps car nous n'avions pas encore vu ses limites, tout d'abord il fallu tout d'abord revoir l'initialisation de la map, car nous étions bloqué avec une longueur de 100 cubes dans la longueur, ce qui rendait les parties trés courtes, aujourd'hui il est possible de créer des maps d'une longueur de 1 000 cubes par lignes, ce qui est largement suffisant pour le moment car les maps que nous créons pour le mode story sont d'une longueur de 500 cubes par lignes, nous estimons que cela est largement suffisant pour que le joueur puisse s'amuser.\\
-				
-		\indent Nous avons aussi du revoir le chargement des maps existantes. En effet, lors de la soutenance précédente nous n'avions pas pensé a ce genre d'utilisation. Il s'avère que cela est très pratique lors des tests des nouvelles maps car au début nous ne pouvions rien faire si la map se trouvait \^etre infaisable. En réalité nous pouvions modifier, en ouvrqnt la maps sur un éditeur de texte tel que notepad et changer la valeur de la case \`a la main, mais cette solution n'était pas envisageable \`a grande échelle. C'est pourquoi nous avons incorporé une fonction permettant de charger des maps dans l'éditeur de maps afin de les modifier aussi facilement qu'on les créer.\\
 		
 		\begin{figure}[h]
 			\centering
@@ -254,6 +289,10 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 			\caption[Editeur de Maps]{Editeur de Maps}
 			\label{fig:Editeur}
 		\end{figure}
+				
+		\indent Nous avons aussi du revoir le chargement des maps existantes. En effet, lors de la soutenance précédente nous n'avions pas pensé a ce genre d'utilisation. Il s'avère que cela est très pratique lors des tests des nouvelles maps car au début nous ne pouvions rien faire si la map se trouvait \^etre infaisable. En réalité nous pouvions modifier, en ouvrqnt la maps sur un éditeur de texte tel que notepad et changer la valeur de la case \`a la main, mais cette solution n'était pas envisageable \`a grande échelle. C'est pourquoi nous avons incorporé une fonction permettant de charger des maps dans l'éditeur de maps afin de les modifier aussi facilement qu'on les créer.\\
+		
+		
 		\vspace{10mm}
 		
 		
@@ -271,18 +310,29 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 		\newpage
 		
 		\subsection{Comment l'utiliser ?}
+		
 		\vspace{6mm}
-		\begin{center}\includegraphics[scale=0.43]{images/panel.jpg}\end{center}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\linewidth]{images/panel.jpg}
+			\caption[Editeur de Maps]{Editeur de Maps}
+			\label{fig:Editeur}
+		\end{figure}
+		
 		\vspace{6mm}
 				
 		Disponible depuis le nouveau panel de connexion, dans le second onglet intitulé "server", vous avez désormais le choix entre rejoindre ou créer un server. Dans le premier cas, il vous suffira de rentrer l'adresse ip ainsi que le port sur lequel est exécuté le server. Dans le second, seul le port est nécessaire et vous pourrez ensuite partager les informations à vos amis pour qu'ils s'y connecte à leur tour. Pour l'aspect visuel du mode réseau, vous pouvez également, dans le troisième onglet, sélectionner la couleur de vos adversaires. En effet si tout le monde est de la même couleur sur la map, on ne sait plus qui est qui..\\		
 		
 		Maintenant que vous êtes connecté au server, le votre ou celui d'un ami, ce que vous souhaitez,  c'est pouvoir jouer ! Et bien il suffit simplement de lancer le mode infini et vous verrez votre/vos amis apparaitre sur la map à vos cotés.\\		
+			
+			
 				
-		\vspace{10mm}
+		\newpage
 		
 		
 		\subsection{Comment le réseau s'est construit ?}
+		\vspace{6mm}
 		
 		Aucun membre du groupe n'avait de connaissance en réseau, il a donc fallut se lancer dans des recherches afin de comprendre comment faire. C'est T4ze qui s'est occupé d'implémenter les parties correspondantes à ce réseau. En y reflechissant, une analogie avec un chat lui est venu à l'esprit. En effet, dans un chat il y a un server principal et les messages de chaque personne sont envoyé à tous le monde. Ici, dans CandyBird c'est exactement ce que nous voulons, sauf qu'à la place des messages, ce sont des positions qui sont envoyées.\\
 		
