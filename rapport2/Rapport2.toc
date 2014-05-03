@@ -20,5 +20,5 @@
 \contentsline {subsection}{\numberline {3.1.2}Comment le r\IeC {\'e}seau s'est construit ?}{14}
 \contentsline {chapter}{\numberline {4}Avancement du Projet}{15}
 \contentsline {chapter}{\numberline {5}La suite}{16}
-\contentsline {section}{\numberline {5.1}Graphisme}{16}
+\contentsline {section}{\numberline {5.1}Graphismes}{16}
 \contentsline {section}{\numberline {5.2}Editeur de map}{16}
