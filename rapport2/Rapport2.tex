@@ -220,8 +220,35 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 		
 		\vspace{10mm}
 		
+		
 \chapter{Les nouveautés}
 	\section{Le Réseau}
+		Pouvoir jouer seul en débloquant des niveau, jouer dans un mode infini et repousser nos limites et même envoyer notre score en ligne sont des possibilités intéressantes. Mais à part comparer son score, on se sens vite seul, et on peux se lasser du jeux.\\
+		
+		C'est pourquoi nous avons choisit, pour votre plus grand plaisir, d'apporter une "légère" nouveauté à CandyBird : Un mode réseau.\\
+		
+		\vspace{6mm}
+		
+		\subsection{Comment l'utiliser ?}
+		
+		Disponible depuis le nouveau panel de connexion, dans le second onglet intitulé "server", vous avez désormais le choix entre rejoindre ou créer un server. Dans le premier cas, il vous suffira de rentrer l'adresse ip ainsi que le port sur lequel est exécuté le server. Dans le second, seul le port est nécessaire et vous pourrez ensuite partager les informations à vos amis pour qu'ils s'y connecte à leur tour. Pour l'aspect visuel du mode réseau, vous pouvez également, dans le troisième onglet, sélectionner la couleur de vos adversaires. En effet si tout le monde est de la même couleur sur la map, on ne sait plus qui est qui..		
+		Maintenant que vous êtes connecté au server, le votre ou celui d'un ami, ce que vous souhaiter,  c'est pouvoir jouer ! Et bien il suffit simplement de lancer le mode infini et vous verrez votre/vos amis apparaitre sur la map à vos cotés.\\
+		
+		Le but du réseau n'est pas d'arriver avant les autres au bout de la map. Vous pouvez toujours essayer mais le mode infini n'as pas de fin donc vous essaierez longtemps.. De plus, la map défile à la même vitesse chez toutes les personnes connecté au même server, et les blocs s'enchainent de la même façon. Vous devez donc survivre aussi longtemps que les autres, et être le dernier en vie pour faire le meilleur score. Tout comme donc le mode infini normal, votre score est envoyer sur notre site en cas de défaite, afin que votre meilleur score soit sauvegardé.
+		
+		\newpage
+		
+		\subsection{Comment ça marche en coulisse ?}
+		
+		Lorsque vous créez le server, c'est une application externe qui se lance. De cette façon, si le server rencontre un problème, que la connexion lâche ou qu'un quelconque problème survient, le jeux ne risque rien. 
+		
+		La première version du server marchait parfaitement mais il y avait un léger problème. On voyait clairement les différents joueurs se déplacer sur la carte mais la génération de map était propre à chaque joueur, et donc personne n'avaient la même map et on voyait des joueurs traverser des blocs. Pour que chacun joue avec les mêmes blocs il a fallut rendre unique cette génération. Logiquement, c'est l'utilisateur qui héberge le server qui a ete choisit pour générer la map pour tous les autres.\\
+		
+		A chaque Update du Game1, les Clients envoie leur pseudo ainsi que leur position (sur x et sur y). De même, ils récupèrent les données envoyées par les autres Clients afin de mettre à jour leur position.
+		
+		
+		
+	
 	
 \chapter{Avancement du Projet}
 	\renewcommand{\arraystretch}{2}

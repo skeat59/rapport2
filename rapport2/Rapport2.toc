@@ -16,7 +16,9 @@
 \contentsline {section}{\numberline {2.3}Editeur de Maps}{8}
 \contentsline {chapter}{\numberline {3}Les nouveaut\IeC {\'e}s}{10}
 \contentsline {section}{\numberline {3.1}Le R\IeC {\'e}seau}{10}
-\contentsline {chapter}{\numberline {4}Avancement du Projet}{11}
-\contentsline {chapter}{\numberline {5}La suite}{12}
-\contentsline {section}{\numberline {5.1}Graphisme}{12}
-\contentsline {section}{\numberline {5.2}Editeur de map}{12}
+\contentsline {subsection}{\numberline {3.1.1}Comment l'utiliser ?}{10}
+\contentsline {subsection}{\numberline {3.1.2}Comment \IeC {\c c}a marche en coulisse ?}{11}
+\contentsline {chapter}{\numberline {4}Avancement du Projet}{12}
+\contentsline {chapter}{\numberline {5}La suite}{13}
+\contentsline {section}{\numberline {5.1}Graphisme}{13}
+\contentsline {section}{\numberline {5.2}Editeur de map}{13}
