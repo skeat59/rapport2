@@ -188,7 +188,12 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 			\indent Pour commencer, nous avons rajout\'e des niveaux. Nous avons donc mis en place un menu vous permettant de choisir le niveau, et donc la map sur laquelle vous voulez jouer, à condition bien s\^ur de l'avoir débloquée en arrivant au moins une fois à bout du niveau précédent. Il y a aujourd'hui neuf maps disponibles o\`u la difficulté augmente au fur et à mesure que l'on avance dans les niveaux. \`A l'aide de l'éditeur de map, il n'a pas été compliqué de créer chaque map et cela a nous a fait gagné pas mal de temps, car nous avons décidé de faire des maps d'une longueur de 500 blocs de long, c'est \`a dire que sur chaque ligne il peut y avoir potentiellement 500 blocs sur chaque ligne, ce qui n'arrive pas car cela ne représente pas un réel intérêt pou le jeux. Cependant, cette t\^ache n'a pas \'et\'e instantanée car nous voulions avoir des maps qui représentent un certain challenge. La création de maps était la partie la moins intéressante de la préparation de la soutenance. C'est pour cela nous nous y sommes donc mis tous ensemble pour venir à bout de ce travail. Par la suite, chaque membre du groupe a testé les différentes maps pour vérifier quelles soient toutes jouables sans qu'elles soient trop simple : il serait dommage d'avoir du contenu qui ne soit pas exploitable par le joueur.\\
 			
 			\indent Afin d'étoffer notre projet, nous avons fait quelques niveaux avec des propriétés particulières. Par exemple, dans le monde 8, la gravité est inversée. Dans le monde 5, certains blocs se détruisent au contact de l'oiseau, en lui faisant baisser sa barre de vie. Cela apporte une difficulté en plus, et nous en rajouterons probablement d'autres plus tard. Cette initiative nous a amenés à travailler à nouveau sur les collisions, ainsi que sur le moteur physique. En effet, il fallait forcement pouvoir adapter ces deux derniers afin de les rendre modulables en fonction de la map jouée.							
-				
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\linewidth]{images/map_menu.png}
+				\caption[Map Menu]{Choix de Maps}				
+				\label{fig:Map Menu}
+			\end{figure}
 			\vspace{10mm}
 			
 		\subsection{Infini}
@@ -200,6 +205,12 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 			Cette nouvelle version est beaucoup plus "logique" en terme de jouabilité. Puisque le problème était l’enchaînement des blocs, pourquoi ne pas rendre cette génération standard afin de régler cette génération quasi impossible a franchir. Nous avons donc choisit de préparer de nombreux patterns, tous de même longueur, commençant et se terminant toujours par les mêmes blocs. Ainsi c'est l’enchaînement des pattern qui se fait de façon aléatoire et le map infini crée reste tout a fait jouable. En faite ce principe suit le même principe que si les différents mondes s’enchaînaient infiniment et de façon aléatoire les uns après les autres, sauf que ce ne sont pas les mêmes mondes.\\
 			
 			Nous avons créé plusieurs patterns, qui s'enchainent aléatoirement. Nous avons estimé que 7 patterns suffisaient pour le moment. La création de pattern se fait de la même façon que les maps. Encore une fois l'éditeur de map nous a pas mal servi. La création de patterns a \'et\'e aussi longue que la création de maps.\\
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.7\linewidth]{images/pattern.png}
+				\caption[Editeur de Maps]{exmples de patterns}	
+				\label{fig:Pattern}
+			\end{figure}
 						
 			Par la suite il nous suffira de rajouter des patterns et des bonus afin d'augmenter la diversité des décors et la jouabilité.
 			
@@ -227,7 +238,12 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 		Nous avons apporté quelques modifications a notre éditeur de maps car nous n'avions pas encore vu ses limites, tout d'abord il fallu tout d'abord revoir l'initialisation de la map, car nous étions bloqué avec une longueur de 100 cubes dans la longueur, ce qui rendait les parties trés courtes, aujourd'hui il est possible de créer des maps d'une longueur de 1 000 cubes par lignes, ce qui est largement suffisant pour le moment car les maps que nous créons pour le mode story sont d'une longueur de 500 cubes par lignes, nous estimons que cela est largement suffisant pour que le joueur puisse s'amuser.\\
 				
 		\indent Nous avons aussi du revoir le chargement des maps existantes. En effet, lors de la soutenance précédente nous n'avions pas pensé a ce genre d'utilisation. Il s'avère que cela est très pratique lors des tests des nouvelles maps car au début nous ne pouvions rien faire si la map se trouvait \^etre infaisable. En réalité nous pouvions modifier, en ouvrqnt la maps sur un éditeur de texte tel que notepad et changer la valeur de la case \`a la main, mais cette solution n'était pas envisageable \`a grande échelle. C'est pourquoi nous avons incorporé une fonction permettant de charger des maps dans l'éditeur de maps afin de les modifier aussi facilement qu'on les créer.
-		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{./images/Editeur}
+			\caption[Editeur de Maps]{Editeur de Maps}
+			\label{fig:Editeur}
+		\end{figure}
 		\vspace{10mm}
 		
 		
@@ -251,8 +267,7 @@ Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements
 				
 		Disponible depuis le nouveau panel de connexion, dans le second onglet intitulé "server", vous avez désormais le choix entre rejoindre ou créer un server. Dans le premier cas, il vous suffira de rentrer l'adresse ip ainsi que le port sur lequel est exécuté le server. Dans le second, seul le port est nécessaire et vous pourrez ensuite partager les informations à vos amis pour qu'ils s'y connecte à leur tour. Pour l'aspect visuel du mode réseau, vous pouvez également, dans le troisième onglet, sélectionner la couleur de vos adversaires. En effet si tout le monde est de la même couleur sur la map, on ne sait plus qui est qui..\\		
 		
-		Maintenant que vous êtes connecté au server, le votre ou celui d'un ami, ce que vous souhaitez,  c'est pouvoir jouer ! Et bien il suffit simplement de lancer le mode infini et vous verrez votre/vos amis apparaitre sur la map à vos cotés.\\
-				
+		Maintenant que vous êtes connecté au server, le votre ou celui d'un ami, ce que vous souhaitez,  c'est pouvoir jouer ! Et bien il suffit simplement de lancer le mode infini et vous verrez votre/vos amis apparaitre sur la map à vos cotés.\\		
 				
 		\vspace{10mm}
 		

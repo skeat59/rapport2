@@ -12,13 +12,13 @@
 \contentsline {section}{\numberline {2.1}Mode de Jeu}{6}
 \contentsline {subsection}{\numberline {2.1.1}Story}{6}
 \contentsline {subsection}{\numberline {2.1.2}Infini}{7}
-\contentsline {section}{\numberline {2.2}Moteur Physique}{8}
-\contentsline {section}{\numberline {2.3}Editeur de Maps}{8}
-\contentsline {chapter}{\numberline {3}Les nouveaut\IeC {\'e}s}{10}
-\contentsline {section}{\numberline {3.1}Le R\IeC {\'e}seau}{10}
-\contentsline {subsection}{\numberline {3.1.1}Comment l'utiliser ?}{11}
-\contentsline {subsection}{\numberline {3.1.2}Comment le r\IeC {\'e}seau s'est construit ?}{11}
-\contentsline {chapter}{\numberline {4}Avancement du Projet}{13}
-\contentsline {chapter}{\numberline {5}La suite}{14}
-\contentsline {section}{\numberline {5.1}Graphisme}{14}
-\contentsline {section}{\numberline {5.2}Editeur de map}{14}
+\contentsline {section}{\numberline {2.2}Moteur Physique}{9}
+\contentsline {section}{\numberline {2.3}Editeur de Maps}{9}
+\contentsline {chapter}{\numberline {3}Les nouveaut\IeC {\'e}s}{11}
+\contentsline {section}{\numberline {3.1}Le R\IeC {\'e}seau}{11}
+\contentsline {subsection}{\numberline {3.1.1}Comment l'utiliser ?}{12}
+\contentsline {subsection}{\numberline {3.1.2}Comment le r\IeC {\'e}seau s'est construit ?}{12}
+\contentsline {chapter}{\numberline {4}Avancement du Projet}{14}
+\contentsline {chapter}{\numberline {5}La suite}{15}
+\contentsline {section}{\numberline {5.1}Graphisme}{15}
+\contentsline {section}{\numberline {5.2}Editeur de map}{15}
