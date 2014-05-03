@@ -116,9 +116,12 @@
 \tableofcontents
 
 \chapter*{Introduction} 
-Dans le cadre de notre premi\`ere année d'étude \`a EPITA, nous avons un projet informatique \`a réaliser tout au long du deuxi\`eme semestre. Nous sommes au milieu de la période prévu pour la réalisation de ce jeu. \\
+Dans le cadre de notre premi\`ere année d'étude \`a EPITA, nous avons un projet informatique \`a réaliser tout au long du deuxi\`eme semestre. Nous sommes au milieu de la période prévu pour la réalisation de notre jeu. \\
 
-Notre groupe de projet est toujours au complet, personne n'a quitté l'école depuis la derni\`ere soutenance. Petit Rappel, notre équipe est composée de 4 membres: Mathilde "Mattou" Laplaze, Florent "T4ze" Youinou, Vincent "Vincae" Baille et Thibault "Skeat" Gdalia. Lors de ce deuxi\`eme rapport, nous allons voir les différentes évolutions que nous avons apportées au jeu. Nous commencerons tout d'abord par rappeler ce que nous avions lors de la premi\`ere soutenance, l'état du moteur physique, les différents mode de jeu et l'éditeur de maps. Nous verrons par la suite les différents éléments que nous avons modifiés, puis nous finirons sur les nouveautés, c'est-\`a-dire ce qui n'exister pas avant.
+Notre groupe de projet est toujours au complet, personne n'a quitté l'école depuis la derni\`ere soutenance. Petit Rappel, notre équipe est composée de 4 membres: Mathilde "Mattou" Laplaze, Florent "T4ze" Youinou, Vincent "Vincae" Baille et Thibault "Skeat" Gdalia. Lors de ce deuxi\`eme rapport, nous allons voir les différentes évolutions que nous avons apportées au jeu. Nous commencerons tout d'abord par rappeler ce que nous avions lors de la premi\`ere soutenance, l'état du moteur physique, les différents mode de jeu et l'éditeur de maps. \\
+
+Depuis la premi\`ere soutenance nous avons modifiés l'ensemble des \'el\'ements existants dans le projet, car ce que nous avions \'et\'e bien mais pas suffisant pour pouvoir ajouter du nouveau contenu. Nous avons ajouter des nouveaut\'es, il nous manquait encore un mode de jeux complet, qui est imp\'eratif d'avoir pour pouvoir estimer avoir un jeux complet.\\
+
 
 
 
@@ -141,6 +144,7 @@ Notre groupe de projet est toujours au complet, personne n'a quitté l'école de
 			
 	\section{Moteur physique}
 		\indent Le Moteur physique était assez rudimentaire lors de la premi\`ere soutenance, lorsque l'on appuyait sur la barre espace l'oiseaumontait \`a vitesse constante. Sinon, le personnage redescendait tranquillement en planant \`a l'aide de ses petites ailes, toujours \`a la meme vitesse. Cela formait des trianglesEn cr\'ant les lois physique de notre jeu nous n'avions pas anticip'e le fait que nous voudrions le changer. C'est principalement pour cette raison que nous avions décidé de refaire intégralement le moteur physique, nous entrerons dans les détails de ces modifications plus tard dans ce rapport, dans la partie des modifications.\\
+		
 		\indent Il y avait également quelques probl\`emes dans certains cas de collision, que n'avions pas pris en compte. Par exemple lorsque l'oiseau touchait un bloc de face et qu'il avait un bloc au-dessus de lui, il était possible de traverser les blocs, ce probl\`eme permettait au joueur de tricher et d'éviter de mourir.\\
 		
 		
@@ -224,4 +228,13 @@ Notre groupe de projet est toujours au complet, personne n'a quitté l'école de
 	\section{Editeur de map}
 		Nous pensons ajouter directement notre éditeur de map a notre jeu dans le but de faciliter la possibilité pour le joueur de créer des maps. En effet jusqu'à présent nous étions obligés de lancer l'éditeur de map en dehors de notre jeu qui lui est pourtant entièrement dédié, cependant nous pensons qu'il serait plus simple pour le joueur de pouvoir accéder à l'éditeur directement depuis le jeu, sans avoir à passer par un autre logiciels complètement détaché de ce dernier. 
 \chapter*{Conclusion}
+	Tout au long de ce rapport, nous avons fait un point sur l'\'etat d'avancement du projet, les modifications, et les nouveaut\'ees. Nous pouvons voir que les bases ont \'et\'e consolid\'ees pour pouvoir supporter les \'evolutions que nous avons apport\'es au jeu et celles qui arriveront avant la fin de l'ann\'ee, peut-\^etre qu'il faudra encore les revoir, mais il y a tr\`es peu de chance que nous ayons besoin de tout restructurer comme nous venons de le faire. \\
+	
+	Les modifications apport\'ees aux mode de jeu Story et Infini Apporte un r\'eel plus \`a la jouabilit\'e du jeu, nous pensons ainsi que les futurs joueur du jeu seront appr\'eci\'es le travail fournit. Nous avons la dur\'ee de vie du mode story, et les mode Infini a reçu un r\'eel refondemment dans l'apparition de blocs, ce qui le rend plus jouable et plus agr\'eable.\\
+	
+	Le nouveau mode r\'eseau apporte une r\'eelle valeur ajout\'ee au projet, gr\^ace \`a lui nous pouvons esp\'erer toucher de plus en plus de joueur. L'\'elaboration de ce mode de jeu n'a pas \'et\'e une t\^ache facille mais nous y sommes parvenu.\\
+	
+	Aujourd'hui CandyBird, a un r\'eel moteur physique, diff\'erents mode jeu qui permet de r\'epondre au attentes d'un grand nombre de joueurs, le mode story permet de relever des d\'efis que notre groupe a pr\'epar\'e, chaque joueur peut montrer son niveau dans le jeu gr\^ace au mode infiny, et il est d\'esormais possible de s'amuser entre amis avec le nouveau mode r\'eseau.\\
+	
+	Tout le travail apport\'e sur le projet, nous a permis de bien avanc\'e, nous sommes satisfait par le r\'esultat que tout cela donne. De plus quand nous faisons le point sur le planning que nous avons \'etabli dans le cahier des charges, nous sommes dans les temps 
 \end {document}
